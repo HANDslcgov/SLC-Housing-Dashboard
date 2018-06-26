@@ -5,7 +5,7 @@
 ## What is this?
 
 ⋅⋅* This is a R Shiny dashboard app. and Highcharts library is used to create all the charts and graphs in the dashboard.
-⋅⋅* For more information, see the [shiny dashboard official website] (https://shiny.rstudio.com) for how to build shiny dashboards and  [Highcharts official website] (https://www.highcharts.com) for highcharts's features, details and API.
+⋅⋅* For more information, see the [shiny dashboard official website] (https://shiny.rstudio.com/) for how to build shiny dashboards and  [Highcharts official website] (https://www.highcharts.com/) for highcharts's features, details and API.
 
 ## Main parts of the dashboard app
 
