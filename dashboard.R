@@ -60,7 +60,8 @@ body <- dashboardBody(
             p("Resolving the crisis will require a community wide effort. Salt Lake City’s Housing and Neighborhood Development Division worked collaboratively 
          to draft a plan to address the root causes of affordability, create long-term solutions for increasing needed housing supply, 
          and expand opportunities throughout the City. The 5 year plan is called Growing SLC, and was unanimously adopted by City Council in December 2017. 
-         This site is a critical component that provides data on housing market performance and progress towards fulfilling the objectives of the plan."),
+         This site is a critical component that provides data on housing market performance and progress towards fulfilling the objectives of the plan.
+         (Please note, that this plan serves as our State of Utah required biennial Moderate Income Housing Plan.)"),
            br(),
            br()
        )
@@ -184,7 +185,8 @@ body <- dashboardBody(
                      p("Many previously “affordable” units throughout the city are currently being leased at higher rental rates due to market demand. 
                        In the fastest growing areas of the city, such as Downtown and Sugarhouse, affordable units are being sold and converted to housing for residents with higher incomes."),
                      p("In Salt Lake City, nearly one half of the renters are cost burdened, and nearly one quarter are extremely cost-burdened (spend more than 50% of their income on rent)."),
-                     p("The graph below shows average rent by neighborhood. The data comes from Rent Jungle, which pulls listings from over 12,000 property management and owner websites on a nightly basis.")
+                     p("The graph below shows average rent by neighborhood. The data comes from Rent Jungle, which pulls listings from over 12,000 property management and owner websites on a nightly basis.
+                       Please note that the graph and calculator do not include all city neighborhoods, and mainly the cost-burden areas of the city.")
               )
             ),
             fluidRow(
