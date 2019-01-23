@@ -30,6 +30,7 @@ sidebar <- dashboardSidebar(
     menuItem("How did we get here?", tabName = "how", icon = icon("bar-chart")),
     menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
     menuItem("Goals of Growing SLC", tabName = "goals", icon = icon("road")),
+    menuItem("Housing Trust Fund Map", tabName = "map", icon = icon("map")),
     br()
   )
 ),
@@ -441,7 +442,35 @@ body <- dashboardBody(
                        tableOutput("goal33")
               )
               )
-            )
+            ),
+# design "map" page ####
+tabItem(tabName = "map",
+        # goals page header####
+        fluidRow(box(class = "goalsHeader", width = 12,
+                     br(),
+                     br(),
+                     h1(class = "boxText", class = "headerText", "HOUSING TRUST FUND MAP"),
+                     br(),
+                     br()
+        )),
+        fluidRow(
+          column(width=10,
+                 #iframe issue
+                 tags$iframe(width = "640", height = "480",
+                             src = "https://www.google.com/maps/d/embed?mid=1EMGku5Mg6FCNp87ZZNv4UPwCzmmQtfVZ&zoom=9"),
+                 
+                 h2("Goal 1: INCREASE HOUSING OPTIONS: REFORM CITY PRACTICES TO PROMOTE A RESPONSIVE, AFFORDABLE, HIGH-OPPORUNITY HOUSING MARKET", class = "goalsTitle"),
+                 p("In order to respond to Salt Lake City’s changing demographics and the housing needs of its diverse communities, 
+                   it is critical to begin to look within the City for real and responsive change that will encourage the market to 
+                   develop the housing and infrastructure needed to accommodate our growing community. This goal focuses on the need 
+                   to increase the diversity of housing types and opportunities in the city by seeking policy reforms that can 
+                   enhance the flexibility of the land-use code and create an efficient and predictable development process for community growth. 
+                   Strategic policy decisions that integrate the transportation system, development related infrastructure, financial institutions, 
+                   and data, as well as innovative design and construction methods, can break down social and economic segregation, thus building a city for everyone.")
+                 )
+                 )
+          )
+      
     )
     )
     )
