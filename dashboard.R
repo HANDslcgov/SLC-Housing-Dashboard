@@ -28,9 +28,10 @@ sidebar <- dashboardSidebar(
   sidebarMenu(
     menuItem("Welcome", tabName = "welcome", icon = icon("home")),
     menuItem("How did we get here?", tabName = "how", icon = icon("bar-chart")),
-    menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+    menuItem("Dashboard", tabName = "dashboard", icon = icon("columns")),
     menuItem("Goals of Growing SLC", tabName = "goals", icon = icon("road")),
     menuItem("City Affordable Housing Map", tabName = "map", icon = icon("map")),
+    menuItem("City Affordable Housing List", tabName = "list", icon = icon("list")),
     br()
   )
 ),
@@ -460,6 +461,22 @@ tabItem(tabName = "map",
                              src = "https://www.google.com/maps/d/embed?mid=1EMGku5Mg6FCNp87ZZNv4UPwCzmmQtfVZ&zoom=9")
                  )
                  )
+          ),
+          # design "list" page ####
+          tabItem(tabName = "list",
+                  # goals page header####
+                  fluidRow(box(class = "goalsHeader", width = 12,
+                               br(),
+                               br(),
+                               h1(class = "boxText", class = "headerText", "CITY AFFORDABLE HOUSING LIST"),
+                               br(),
+                               br()
+                  )),
+                  fluidRow(
+                    column(width=10,
+                           p(tags$b("Get the PDF: "), a(tags$b("Here."), target="_blank", href="Housing-Tracking-Sheet_5-17-2019.pdf"))
+                    )
+                  )
           )
       
     )
