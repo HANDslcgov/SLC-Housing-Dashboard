@@ -474,7 +474,7 @@ tabItem(tabName = "map",
                   )),
                   fluidRow(
                     column(width=10,
-                           p(tags$b("Get the PDF: "), a(tags$b("Here."), target="_blank", href="Housing-Tracking-Sheet_5-17-2019.pdf"))
+                           h4(tags$b("Get the PDF: "), a(tags$b("Click Here."), target="_blank", href="Housing-Tracking-Sheet_5-17-2019.pdf"))
                     )
                   )
           )
